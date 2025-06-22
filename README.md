@@ -14,3 +14,5 @@ Para el Diseño del Modelo de Datos se seguirá la Metodología Dimensional de K
 #### Modelo ER Inicial
 
 Para el primer MVP, se iniciará con una Fact Table que almacene de manera histórica la información de Saldos de Crédito, así como el IMOR y el ICOR correspondientes a los Boletines Estadísticos publicados por la CNBV, identificados por Institución Financiera y Tipo de Cartera. Al rededor de este objeto, se consideran además dos "Dimensional Tables", las cuales, a manera de catálogos, complementarán el contexto de los Bancos y los Tipos de Cartera de Crédito almacenados en la Fact Table previamente explicada.
+
+![alt_image](https://github.com/David97A/DataPipeline_InformacionFinanciera/blob/50b58c2474d94498c6a4b3f66267cd577753a47d/Recursos/Imagenes/ERD_ModeloInfoFinanciera_CNBV_01_20250622.png)
