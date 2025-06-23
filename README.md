@@ -7,6 +7,10 @@ El objetivo de este repositorio es el documentar el Diseño de un Flujo de Datos
 
 ## Arquitectura de la Solucion
 
+### Flujo de Datos
+
+
+
 ### Modelo de Datos Relacional
 
 Para el Diseño del Modelo de Datos se seguirá la Metodología Dimensional de Kimball (Kimball & Ross, 2002), basada en arquitecturas Tipo Estrella y Copo de Nieve, con Objetos de Tipo "Fact Tables" al centro del Modelo y sus correspondientes "Dimensional Tables" al rededor para brindar el Contexto necesario a la información.
