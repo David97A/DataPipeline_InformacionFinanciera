@@ -9,6 +9,9 @@ El objetivo de este repositorio es el documentar el Diseño de un Flujo de Datos
 
 ### Flujo de Datos
 
+El Flujo para el tratamiento de la información inicia con la extracción de los archivos del Boletín Estadístico correspondientes a la Banca Múltiple hacia un repositorio de documentos local mediante Comandos Bash. Una vez depositado el archivo en el repositorio local, la información contenida en dichos documentos se limpia, estandariza y configura por medio de un Script en Python para ser depositada en un Modelo de Datos Dimensional de tipo PostgreSQL. Tanto el proceso de Extracción por Bash, como la Limpieza, Transformación y Carga a BD mediante Python son orquestados mediante un DAG de Apache Airflow.
+
+Una vez depositada la Información en la BD Relacional, la misma es consumida por un Dashboard Interactivo desarrollado con la paquetería Shiny para el lenguaje de programación R. El objetivo final de la representación de la información por medio de un Dashboard es facilitar la lectura de KPI's y Tendencias identificadas en la Información publicada por la CNBV.
 
 
 ### Modelo de Datos Relacional
