@@ -7,6 +7,14 @@ El objetivo de este repositorio es el documentar el Diseño de un Flujo de Datos
 
 ## Arquitectura de la Solucion
 
+### Flujo de Datos
+
+El Flujo para el tratamiento de la información inicia con la extracción de los archivos del Boletín Estadístico correspondientes a la Banca Múltiple hacia un repositorio de documentos local mediante Comandos Bash. Una vez depositado el archivo en el repositorio local, la información contenida en dichos documentos se limpia, estandariza y configura por medio de un Script en Python para ser depositada en un Modelo de Datos Dimensional de tipo PostgreSQL. Tanto el proceso de Extracción por Bash, como la Limpieza, Transformación y Carga a BD mediante Python son orquestados mediante un DAG de Apache Airflow.
+
+Una vez depositada la Información en la BD Relacional, la misma es consumida por un Dashboard Interactivo desarrollado con la paquetería Shiny para el lenguaje de programación R. El objetivo final de la representación de la información por medio de un Dashboard es facilitar la lectura de KPI's y Tendencias identificadas en la Información publicada por la CNBV.
+
+![alt_image](https://github.com/David97A/DataPipeline_InformacionFinanciera/blob/6732bbed7ceb7181fae7b6e3d83f3d378cf7f8c3/Recursos/Imagenes/ArquitecturaSolucion.png)
+
 ### Modelo de Datos Relacional
 
 Para el Diseño del Modelo de Datos se seguirá la Metodología Dimensional de Kimball (Kimball & Ross, 2002), basada en arquitecturas Tipo Estrella y Copo de Nieve, con Objetos de Tipo "Fact Tables" al centro del Modelo y sus correspondientes "Dimensional Tables" al rededor para brindar el Contexto necesario a la información.
