@@ -13,6 +13,7 @@ El Flujo para el tratamiento de la información inicia con la extracción de los
 
 Una vez depositada la Información en la BD Relacional, la misma es consumida por un Dashboard Interactivo desarrollado con la paquetería Shiny para el lenguaje de programación R. El objetivo final de la representación de la información por medio de un Dashboard es facilitar la lectura de KPI's y Tendencias identificadas en la Información publicada por la CNBV.
 
+![alt_image](https://github.com/David97A/DataPipeline_InformacionFinanciera/blob/6732bbed7ceb7181fae7b6e3d83f3d378cf7f8c3/Recursos/Imagenes/ArquitecturaSolucion.png)
 
 ### Modelo de Datos Relacional
 
